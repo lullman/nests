@@ -1,0 +1,12 @@
+<h2>Crate: <%= @crate.crate_name %></h2>
+<h2>Products</h2>
+<table>
+  <th>
+    <td>Products</td>
+  </th>
+  <% @crate.products.each do |product| %>
+    <tr>
+      <td><%= product.product_name %></td>
+    </tr>
+  <% end %>
+</table>

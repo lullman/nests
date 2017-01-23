@@ -1,0 +1,10 @@
+<h2>New Crate</h2>
+<%= form_for(@crate) do |f| %>
+  <%= f.label :crate_name %>
+  <%= f.text_field :crate_name %></br>
+  <%= f.fields_for :product do |ff| %>
+    <%= ff.label :product_name %>
+    <%= ff.text_field :product_name %>
+  <% end %>
+  <%= f.submit %>
+<% end %>

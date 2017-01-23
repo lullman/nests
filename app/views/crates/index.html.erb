@@ -1,0 +1,11 @@
+<h2>Crates</h2>
+<table>
+  <th>
+    <td>Crate Name</td>
+  </th>
+  <% @crates.each do |crate| %>
+    <tr>
+      <td><%= crate.crate_name %></td>
+    </tr>
+  <% end %>
+</table>
