@@ -4,7 +4,7 @@
   <%= f.text_field :crate_name %></br>
   <%= f.fields_for :product do |ff| %>
     <%= ff.label :product_name %>
-    <%= ff.text_field :product_name %>
+    <%= ff.text_field :product_name %></br>
   <% end %>
   <%= f.submit %>
 <% end %>
