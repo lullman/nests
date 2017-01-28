@@ -2,7 +2,7 @@
 <%= form_for(@crate) do |f| %>
   <%= f.label :crate_name %>
   <%= f.text_field :crate_name %></br>
-  <%= f.fields_for :product do |ff| %>
+  <%= f.fields_for :products do |ff| %>
     <%= ff.label :product_name %>
     <%= ff.text_field :product_name %></br>
   <% end %>

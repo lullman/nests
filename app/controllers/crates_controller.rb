@@ -10,6 +10,7 @@ class CratesController < ApplicationController
 
   def new
     @crate = Crate.new
+    @crate.products.new
   end
 
   def edit
@@ -36,7 +37,7 @@ class CratesController < ApplicationController
 
   private
     def crate_params
-      params.require(:crate).permit(:crate_name, :products_attributes => [ :product_name ])
+      params.require(:crate).permit(:crate_name, products_attributes: [:product_name] )
     end
 
 end
